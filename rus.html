@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95f8315255.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Albert Khachaturyants | Վեբ Ծրագրավորում և Դիզայն, Ծրագրավորում, Հեռախոսային/Համակարգչային Խաղեր և Հավելվածներ, IT Խորհրդատվություն">
+    <meta name="keywords" content="Albert Khachaturyants| Վեբ Ծրագրավորում և Դիզայն, Ծրագրավորում, Հեռախոսային/Համակարգչային Խաղեր և Հավելվածներ, IT Խորհրդատվություն">
+    <meta name="author" content="Albert Khachaturyants">
+    <title>ВебСторм- IT Компания </title>
+</head>
+<body>
+      <header>
+          <div class="header-section">
+              <div class="header-cont">
+                <div class="logo-blok"><img src="favicon.png" alt="LOGO" class="logo"></div>
+                <h1 class="text-logo">ВебСторм</h1>
+             <button type="btn" class="btn-menu" onClick="openMenu();">
+                 <i class="fa-solid fa-bars"></i> <span class="small">Меню</span>
+             </button>
+              </div>
+              <!---->
+        <div class="nav">
+                <button class="btn-close" onclick="btnclose();"><i class="fa-solid fa-circle-xmark"></i></button>
+                <a href="index.html"><img src="am.jpg" class="flag"> AM</a>
+                <a href="rus.html"><img src="ru.png" class="flag"> RU</a>
+                <a href="eng.html"><img src="eng.png" class="flag"> EN</a>
+        </div>
+        <!---->
+            <div class="home-text">
+                <h1 class="h1-texts"> <i class="fa-solid fa-laptop-code"></i> Изготовление Веб-Сайтов</h1>
+                <p class="p-text">
+                    Изготовление профессиональных сайтов , <br>
+                    Спешите позвонить и заказать ваш сайт :<br>
+                    на сайте можно увидеть цены и пакеты<br>
+                </p>
+                <a href="#price"><button class="btn-more">Подробнее <i class="fa-solid fa-angles-right"></i> </button></a>
+            </div>
+        <!---->
+          </div>
+      </header>
+        <!--main-->
+        <main>
+            <div class="main-section"  id="price">
+                <div class="box">
+                    <div class="box-center">
+                        <div class="box-image"><img src="box1.png"></div><h2 class="h2">Пакет 25000 AMD</h2>
+                    <p class="info-price">
+                        <i class="fa-solid fa-check"></i> Одностраничный <br>
+                        <i class="fa-solid fa-check"></i> На Одном Языке <br>
+                        <i class="fa-solid fa-check"></i> 15 картин<br>
+                        <i class="fa-solid fa-xmark"></i> Мобайл<br>
+                        <i class="fa-solid fa-xmark"></i> Домен<br>
+                        <i class="fa-solid fa-xmark"></i> Хостинг<br>
+                    </p>
+                    <a href="tel:+37498835500"><button class="add-card">Заказать</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-center">
+                        <div class="box-image"><img src="box1.png"></div><h2 class="h2">Пакет 55000 AMD</h2>
+                    <p class="info-price">
+                        <i class="fa-solid fa-check"></i> две страницы <br>
+                        <i class="fa-solid fa-check"></i> На Двух Языках <br>
+                        <i class="fa-solid fa-check"></i> 25 картин<br>
+                        <i class="fa-solid fa-check"></i> Домен<br>
+                        <i class="fa-solid fa-check"></i> Хостинг<br>
+                        <i class="fa-solid fa-xmark"></i> Мобайл<br>
+                    </p>
+                    <a href="tel:+37498835500"><button class="add-card">Заказать</button></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-center">
+                        <div class="box-image"><img src="box1.png"></div><h2 class="h2">Пакет 99000 AMD</h2>
+                    <p class="info-price">
+                        <i class="fa-solid fa-check"></i> Пять Страниц / Menu / <br>
+                    <i class="fa-solid fa-check"></i> На Трех Языках AM / RU / EN<br>
+                    <i class="fa-solid fa-check"></i> 40 Картин + Дизайн<br>
+                    <i class="fa-solid fa-check"></i> Домен<br>
+                    <i class="fa-solid fa-check"></i> Хостинг<br>
+                    <i class="fa-solid fa-check"></i> Мобайл<br>
+                    </p>
+                    <a href="tel:+37498835500"><button class="add-card">Заказать</button></a>
+                    </div>
+                </div>
+            </div>
+       </main>
+       <!---->
+    <footer>
+        <form action="" method="GET">
+            <div class="form-center">
+                <h3 class="h3"><i class="fa-solid fa-envelope"></i> Письмо к нам</h3>
+                <input class="input" type="text" placeholder="Ваше Имя" id="input1">
+                <input class="input" type="email" placeholder="* E-mail Адрес" id="input2">
+                <input class="input" type="number" placeholder="* Тел. +374" id="input3">
+                <textarea id="message" placeholder="* Сообщение"></textarea>
+                <button onclick="btnsend();" class="btn-send">Отправить <i class="fa-solid fa-angles-right"></i></button>
+            </div>
+        </form>
+  </footer>
+       <!---->
+      <script type="text/javascript">
+          function openMenu () {
+              document.querySelector('.nav').style.display = 'block';
+          }
+          function btnclose () {
+              document.querySelector('.nav').style.display = 'none';
+          }
+          function btnsend () {
+              let input = document.getElementById('input2')
+              let message = document.getElementById('message')
+              let phone = document.getElementById('input3')
+
+              if (input.value === '' || input.value == null) {
+                  alert("Вы не заполнили адрес электронной почты ")
+              }
+              if(message.value === '' || message.value == null) {
+                  alert("Вы Не Заполнили Сообщение")
+              }
+              if(phone.value === '' || phone.value == null) {
+                  alert("Не Заполнили Номер Телефона")
+              }
+              else{
+                  alert("Ваше письмо отправлено")
+              }
+          }
+      </script>
+</body>
+</html>
+
